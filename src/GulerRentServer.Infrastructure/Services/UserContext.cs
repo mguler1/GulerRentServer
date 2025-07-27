@@ -5,7 +5,7 @@ using System.Security.Claims;
 namespace GulerRentServer.Infrastructure.Services
 {
     internal sealed class UserContext(
-      HttpContextAccessor httpContextAccessor) : IUserContext
+      IHttpContextAccessor httpContextAccessor) : IUserContext
     {
         public Guid GetUserId()
         {
