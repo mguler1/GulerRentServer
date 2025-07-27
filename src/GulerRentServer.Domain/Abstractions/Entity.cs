@@ -12,8 +12,10 @@ namespace GulerRentServer.Domain.Abstractions
         public bool IsActive { get; private set; }
         public DateTimeOffset CreatedAt { get; private set; }
         public DateTimeOffset? UpdatedAt { get; private set; }
+        public DateTimeOffset? DeletedAt { get; private set; }
         public IdentityId CreatedBy { get; private set; }=default!;
         public IdentityId? UpdatedBy { get; private set; }
+        public IdentityId? DeletedBy { get; private set; }
         public bool IsDeleted { get; private set; }
 
         public void SetStatus(bool isActive)

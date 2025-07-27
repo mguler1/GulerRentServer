@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GulerRentServer.Domain", "s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GulerRentServer.Application", "src\GulerRentServer.Application\GulerRentServer.Application.csproj", "{CECA114B-5627-4F9F-B662-8313F7640F2A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GulerRentServer.Infrastructure", "src\GulerRentServer.Infrastructure\GulerRentServer.Infrastructure.csproj", "{82E1372F-8146-4009-997E-0B3870DF1AFE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{CECA114B-5627-4F9F-B662-8313F7640F2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CECA114B-5627-4F9F-B662-8313F7640F2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CECA114B-5627-4F9F-B662-8313F7640F2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82E1372F-8146-4009-997E-0B3870DF1AFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82E1372F-8146-4009-997E-0B3870DF1AFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82E1372F-8146-4009-997E-0B3870DF1AFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82E1372F-8146-4009-997E-0B3870DF1AFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +36,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{51009948-B6E2-47B0-904B-A48C091FFAA5} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{CECA114B-5627-4F9F-B662-8313F7640F2A} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{82E1372F-8146-4009-997E-0B3870DF1AFE} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2B245934-F948-4549-9FB8-9488ACC75ECF}

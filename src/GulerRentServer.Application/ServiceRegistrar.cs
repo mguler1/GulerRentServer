@@ -1,25 +1,20 @@
 ﻿using FluentValidation;
 using GulerRentServer.Application.Behaviors;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GulerRentServer.Application
 {
-    public static class RegistrarService
+    public static class ServiceRegistrar
     {
         public static IServiceCollection AddApplication(this IServiceCollection services)
         {
             services.AddMediatR(cfr =>
             {
-                cfr.RegisterServicesFromAssembly(typeof(RegistrarService).Assembly);
+                cfr.RegisterServicesFromAssembly(typeof(ServiceRegistrar).Assembly);
                 cfr.AddOpenBehavior(typeof(ValidationBehavior<,>));
                 cfr.AddOpenBehavior(typeof(PermissionBehavior<,>));
             });
-            services.AddValidatorsFromAssembly(typeof(RegistrarService).Assembly);
+            services.AddValidatorsFromAssembly(typeof(ServiceRegistrar).Assembly);
            
             return services;
         }
